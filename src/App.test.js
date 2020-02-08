@@ -11,6 +11,6 @@ test('open app and renders todo input', () => {
 
 test('open app and renders todo list project', () => {
   const { getByText } = render(<App />);
-  const linkElement = getByText(/Heryca's Todo List Projectoa/i);
+  const linkElement = getByText(/Heryca's Todo List Project/i);
   expect(linkElement).toBeInTheDocument();
 });
