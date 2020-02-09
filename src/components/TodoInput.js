@@ -18,6 +18,7 @@ export default class Todoinput extends Component {
                             placeholder='add a todo item'
                             value={item}
                             onChange={handleChange}
+                            id='item_text'
                         />
                     </div>
                     <button type='submit' id="button_submit"

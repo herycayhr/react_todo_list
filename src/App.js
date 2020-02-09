@@ -73,12 +73,20 @@ class App extends Component {
               handleSubmit={this.handleSubmit}
               editItem={this.state.editItem}
             />
+            <h3 className='text-capitalize text-center'>heryca's todo list project</h3>
             <TodoList 
-            items={this.state.items} 
-            clearList={this.clearList}
+            items={this.state.items}
             handleDelete = {this.handleDelete}
             handleEdit = {this.handleEdit}
             />
+            <button
+                id='clear_button'
+                type='button'
+                className='btn btn-danger btn-block text-capitalize mt-5'
+                onClick={this.clearList}
+            >
+                clear list
+            </button>
           </div>
         </div>
       </div>);
